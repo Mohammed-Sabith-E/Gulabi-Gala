@@ -1,0 +1,723 @@
+.container {
+  padding: 20px 250px 0px 250px;
+}
+
+.container .logo {
+  width: 160px;
+}
+
+.sub-heading-underline {
+  width: 150px;
+  height: 5px;
+  background-color: #07ad8e;
+  margin-top: 8px;
+}
+
+.animated-headline {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem; /* Adjust font size */
+  font-family: "Poppins", sans-serif;
+  position: relative;
+  color: #fff; /* Text color */
+}
+
+.headline-plain-text {
+  margin: 0 5px;
+}
+
+.headline-dynamic-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.headline-dynamic-text {
+  display: inline-block;
+  position: relative;
+  color: #07ad8e;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.headline-underline {
+  position: absolute;
+  bottom: -35px; /* Adjust distance below text */
+  left: 0;
+  width: 100%;
+  height: 100px;
+  fill: none;
+  stroke: #07ad8e; /* Underline color */
+  stroke-width: 5;
+  stroke-dasharray: 500;
+  stroke-dashoffset: 500;
+  animation: drawLine 5s linear infinite;
+}
+
+@keyframes drawLine {
+  0% {
+    stroke-dashoffset: 500;
+  }
+  50% {
+    stroke-dashoffset: 0;
+  }
+  100% {
+    stroke-dashoffset: 500;
+  }
+}
+
+.countdown-container {
+  width: 550px;
+  border-radius: 25px;
+  padding: 35px;
+  margin: 24px;
+  position: absolute;
+  top: 85%;
+  right: 3.5rem; /* 10 in Tailwind (40px) */
+  z-index: 20;
+  transform: translateY(-50%);
+  text-align: center;
+}
+
+.countdown-container .countdown span {
+  color: #07ad8e;
+}
+
+.countdown-container button {
+  background-color: #07ad8e;
+  color: #ffffff;
+  margin-top: 35px;
+  padding: 10px 30px;
+  text-transform: uppercase;
+  border-radius: 25px;
+  font-size: 18px;
+}
+
+.countdown-container button:hover {
+  background-color: #8c52ff;
+}
+
+#where-when {
+  padding: 0px 200px 0px 200px;
+  margin-top: 100px;
+}
+
+#where-when .grid-card {
+  padding: 25px;
+  box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+#where-when .grid-card span {
+  color: #07ad8e;
+}
+
+#where-when .grid-card div {
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-left: 25px;
+}
+
+#highlights-counter h3 {
+  color: #07ad8e;
+  margin-top: 20px;
+  padding: 0px 200px 0px 200px;
+}
+
+#highlights-counter .counter-number {
+  color: #223645;
+}
+
+#events {
+  margin-top: 50px;
+}
+
+#events .event-container .event-highlights-cards div span {
+  color: #ffffff;
+}
+
+.gallery {
+  padding: 0;
+  padding-top: 70px;
+}
+
+.gallery .heading {
+  padding: 0px 250px 0px 250px;
+  margin-bottom: 20px;
+}
+
+.gallery .heading h3 {
+  text-transform: uppercase;
+  font-size: xx-large;
+  font-weight: 700;
+  color: #07ad8e;
+}
+
+.gallery .heading a {
+  font-size: 15px;
+  color: #616161;
+}
+
+.gallery .heading a:hover {
+  color: rgb(0, 149, 255);
+}
+
+.gallery-showcase {
+  list-style: none;
+  width: 100%;
+  display: flex;
+}
+
+.gallery-showcase li {
+  display: block;
+  float: left;
+  width: 25%;
+}
+
+.gallery-img {
+  width: 100%;
+  margin: 0;
+  overflow: hidden;
+  background-color: #000;
+  transition: transform 0.5s, opacity 0.5s;
+}
+
+.gallery-img img {
+  width: 100%;
+  height: auto;
+  opacity: 0.7;
+}
+
+.clearfix {
+  zoom: 1;
+}
+
+.clearfix::after {
+  content: ".";
+  clear: both;
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
+.sell-with-us {
+  padding: 0px 250px 0px 250px;
+  margin-top: 70px;
+}
+
+.sell-with-us h2 {
+  color: #07ad8e;
+  font-size: xx-large;
+}
+
+.sell-with-us button {
+  background-color: #07ad8e;
+  color: #ffffff;
+  margin-top: 35px;
+  padding: 10px 30px;
+  text-transform: uppercase;
+  border-radius: 25px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.sell-with-us button:hover {
+  background-color: #8c52ff;
+}
+
+#contact-us {
+  padding: 0px 250px 0px 250px;
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+
+#contact-us .contact h2 {
+  font-size: xx-large;
+  font-weight: bold;
+  color: #07ad8e;
+}
+
+#contact-us .form button {
+  background-color: #07ad8e;
+  color: #ffffff;
+  padding: 10px 30px;
+  text-transform: uppercase;
+  border-radius: 25px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+#contact-us .form button:hover {
+  background-color: #8c52ff;
+}
+
+#footer {
+  background-color: #011a41;
+}
+
+#footer .top-container {
+  padding: 30px 200px 30px 200px;
+}
+
+#footer .top-container img {
+  width: 200px;
+}
+/* Media Max 1280px (Large Tablets, Small Laptops) */
+@media (max-width: 1280px) {
+    .container {
+      padding: 10px 40px;
+    }
+  
+    .container .logo {
+      width: 180px;
+    }
+  
+    .welcome-text-box {
+      margin: 25px;
+    }
+  
+    .sub-heading-underline {
+      width: 140px;
+    }
+  
+    .countdown-container {
+      margin: 40px;
+      width: 65%;
+      padding: 35px;
+      height: max-content;
+      right: -20%;
+      top: 75%;
+      margin-bottom: 25px;
+      transform: translateX(-50%);
+    }
+  
+    .countdown-container button {
+      background-color: #07ad8e;
+      color: #ffffff;
+      margin-top: 30px;
+      padding: 12px 18px;
+      text-transform: uppercase;
+      border-radius: 25px;
+      font-size: 18px;
+    }
+  
+    #where-when {
+      padding: 0px 25px;
+      margin-top: 220px;
+    }
+  
+    #where-when .grid-card {
+      padding: 25px;
+      box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.2);
+    }
+  
+    #where-when .grid-card span {
+      color: #07ad8e;
+      font-size: 45px;
+    }
+  
+    #where-when .grid-card div {
+      margin-left: 25px;
+    }
+  
+    #where-when .grid-card div h4 {
+      font-size: 22px;
+    }
+  
+    #highlights-counter h3 {
+      margin-top: 30px;
+      padding: 0px 25px;
+      font-size: 26px;
+    }
+  
+    #highlights-counter .counter-number {
+      font-size: 50px;
+    }
+  
+    #highlights-counter p:last-child {
+      font-size: 18px;
+    }
+  
+    .gallery {
+      padding: 0;
+      padding-top: 90px;
+    }
+  
+    .gallery .heading {
+      padding: 0px 25px 0px 25px;
+      margin-bottom: 25px;
+    }
+  
+    .gallery .heading h3 {
+      font-size: 26px;
+    }
+  
+    .gallery .heading a {
+      font-size: 18px;
+    }
+  
+    .gallery-showcase {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  
+    .gallery-showcase li {
+      display: flex;
+      width: 100%;
+      padding: 15px 20px;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .gallery-img {
+      width: 100%;
+      margin: auto;
+      background-color: #000;
+      overflow: hidden;
+      opacity: 1.2;
+    }
+  
+    .gallery-img img {
+      width: 100%;
+      height: auto;
+    }
+  
+    .sell-with-us {
+      padding: 0px 40px;
+      margin-top: 80px;
+    }
+  
+    .sell-with-us button {
+      margin-top: 20px;
+    }
+  
+    .sell-with-us h2 {
+      font-size: 24px;
+    }
+  
+    #contact-us {
+      padding: 0px 25px;
+      margin-top: 90px;
+      margin-bottom: 90px;
+    }
+  
+    #contact-us .contact h2 {
+      font-size: 24px;
+    }
+  
+    #footer .top-container {
+      padding: 40px 25px;
+    }
+  
+    #footer .top-container img {
+      width: 160px;
+    }
+  }
+  
+  /* Media Max 900px (Tablets, Smaller Laptops) */
+  @media (max-width: 900px) {
+    .container {
+      padding: 10px 30px;
+    }
+  
+    .container .logo {
+      width: 160px;
+    }
+  
+    .welcome-text-box {
+      margin: 20px;
+    }
+  
+    .sub-heading-underline {
+      width: 130px;
+    }
+  
+    .countdown-container {
+      margin: 30px;
+      width: 80%;
+      padding: 30px;
+      height: max-content;
+      right: -35%;
+      top: 80%;
+      margin-bottom: 20px;
+      transform: translateX(-50%);
+    }
+  
+    .countdown-container button {
+      background-color: #07ad8e;
+      color: #ffffff;
+      margin-top: 25px;
+      padding: 10px 16px;
+      text-transform: uppercase;
+      border-radius: 25px;
+      font-size: 16px;
+    }
+  
+    #where-when {
+      padding: 0px 20px;
+      margin-top: 240px;
+    }
+  
+    #where-when .grid-card {
+      padding: 20px;
+      box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.2);
+    }
+  
+    #where-when .grid-card span {
+      color: #07ad8e;
+      font-size: 42px;
+    }
+  
+    #where-when .grid-card div {
+      margin-left: 20px;
+    }
+  
+    #where-when .grid-card div h4 {
+      font-size: 20px;
+    }
+  
+    #highlights-counter h3 {
+      margin-top: 25px;
+      padding: 0px 20px;
+      font-size: 24px;
+    }
+  
+    #highlights-counter .counter-number {
+      font-size: 45px;
+    }
+  
+    #highlights-counter p:last-child {
+      font-size: 16px;
+    }
+  
+    .gallery {
+      padding: 0;
+      padding-top: 75px;
+    }
+  
+    .gallery .heading {
+      padding: 0px 20px 0px 20px;
+      margin-bottom: 20px;
+    }
+  
+    .gallery .heading h3 {
+      font-size: 22px;
+    }
+  
+    .gallery .heading a {
+      font-size: 16px;
+    }
+  
+    .gallery-showcase {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  
+    .gallery-showcase li {
+      display: flex;
+      width: 100%;
+      padding: 10px 15px;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .gallery-img {
+      width: 100%;
+      margin: auto;
+      background-color: #000;
+      overflow: hidden;
+      opacity: 1.2;
+    }
+  
+    .gallery-img img {
+      width: 100%;
+      height: auto;
+    }
+  
+    .sell-with-us {
+      padding: 0px 30px;
+      margin-top: 70px;
+    }
+  
+    .sell-with-us button {
+      margin-top: 15px;
+    }
+  
+    .sell-with-us h2 {
+      font-size: 22px;
+    }
+  
+    #contact-us {
+      padding: 0px 20px;
+      margin-top: 80px;
+      margin-bottom: 80px;
+    }
+  
+    #contact-us .contact h2 {
+      font-size: 22px;
+    }
+  
+    #footer .top-container {
+      padding: 40px 20px;
+    }
+  
+    #footer .top-container img {
+      width: 150px;
+    }
+  }
+    
+
+/* Media Max 640 Pixels  */
+@media (max-width: 640px) {
+  .container {
+    padding: 10px 10px 0px 30px;
+  }
+
+  .container .logo {
+    width: 100px;
+  }
+
+  .welcome-text-box {
+    margin: 15px;
+  }
+
+  .sub-heading-underline {
+    width: 90px;
+  }
+
+  .countdown-container {
+    margin: 24px;
+    width: 90%;
+    padding: 25px;
+    height: max-content;
+    right: -46%;
+    top: 90%;
+    bottom: 2.5rem;
+    margin-bottom: 20px;
+    transform: translateX(-50%);
+  }
+
+  .countdown-container button {
+    background-color: #07ad8e;
+    color: #ffffff;
+    margin-top: 35px;
+    padding: 8px 14px;
+    text-transform: uppercase;
+    border-radius: 25px;
+    font-size: 14px;
+  }
+
+  #where-when {
+    padding: 0px 10px 0px 10px;
+    margin-top: 280px;
+  }
+
+  #where-when .grid-card {
+    padding: 15px;
+    box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.2);
+  }
+
+  #where-when .grid-card span {
+    color: #07ad8e;
+    font-size: 40px;
+  }
+
+  #where-when .grid-card div {
+    margin-left: 15px;
+  }
+
+  #where-when .grid-card div h4 {
+    font-size: 18px;
+  }
+
+  #highlights-counter h3 {
+    margin-top: 20px;
+    padding: 0px 20px 0px 20px;
+    font-size: 20px;
+  }
+
+  #highlights-counter .counter-number {
+    font-size: 40px;
+  }
+
+  #highlights-counter p:last-child {
+    font-size: 14px;
+  }
+
+  .gallery {
+    padding: 0;
+    padding-top: 70px;
+  }
+
+  .gallery .heading {
+    padding: 0px 15px 0px 15px;
+    margin-bottom: 20px;
+  }
+
+  .gallery .heading h3 {
+    font-size: 20px;
+  }
+
+  .gallery .heading a {
+    font-size: 14px;
+  }
+
+  .gallery-showcase {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .gallery-showcase li {
+    display: flex;
+    width: 100%;
+    padding: 10px 15px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .gallery-img {
+    width: 100%;
+    margin: auto;
+    background-color: #000;
+    overflow: hidden;
+    opacity: 1.2;
+  }
+
+  .gallery-img img {
+    width: 100%;
+    height: auto;
+  }
+
+  .sell-with-us {
+    padding: 0px 20px 0px 20px;
+    margin-top: 60px;
+  }
+
+  .sell-with-us button {
+    margin-top: 10px;
+  }
+
+  .sell-with-us h2 {
+    font-size: 20px;
+  }
+
+  #contact-us {
+    padding: 0px 15px 0px 15px;
+    margin-top: 70px;
+    margin-bottom: 70px;
+  }
+
+  #contact-us .contact h2 {
+    font-size: 20px;
+  }
+
+  #footer .top-container {
+    padding: 40px 10px 30px 10px;
+  }
+
+  #footer .top-container img {
+    width: 120px;
+  }
+}

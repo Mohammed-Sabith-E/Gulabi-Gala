@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gulabi Gala</title>
+    <link rel="icon" href="./assets/images/icon.png" type="image/x-icon" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body class="bg-[#FFFFFF] text-gray-800 font-sans">
+    <!-- Header and Hero Section -->
+    <header
+      class="relative h-screen flex flex-col items-center text-white"
+      style="
+        background-image: url('./assets/images/c6121e96144921.5ea7ecbeef92f.jpg');
+        background-size: cover;
+        background-position: center;
+      "
+    >
+      <!-- Logo & Nav Bar -->
+      <div
+        class="container mx-auto flex justify-between items-center mb-6 z-50"
+      >
+        <!-- Logo -->
+        <img src="./assets/images/logo.png" class="logo" />
+
+        <!-- Nav Bar -->
+        <nav class="relative">
+          <!-- Mobile menu button -->
+          <button id="menu-toggle" class="lg:hidden text-3xl p-4">
+            <span class="material-icons">menu</span>
+          </button>
+
+          <!-- Side menu (hidden by default) -->
+          <div
+            id="side-menu"
+            class="lg:hidden fixed inset-0 bg-black bg-opacity-90 z-50 hidden"
+          >
+            <div
+              class="flex flex-col bg-transparent w-3/4 h-full p-4 space-y-6"
+            >
+              <!-- Close button -->
+              <button id="close-menu" class="text-white text-3xl self-start">
+                <span class="material-icons">close</span>
+              </button>
+
+              <a href="#home" class="text-base font-poppins text-lg nav-link"
+                >Home</a
+              >
+              <a href="#about" class="text-base font-poppins text-lg nav-link"
+                >About Us</a
+              >
+              <a href="#seller" class="text-base font-poppins text-lg nav-link"
+                >Sell With Us</a
+              >
+              <a href="#events" class="text-base font-poppins text-lg nav-link"
+                >Events</a
+              >
+              <a
+                href="#partners"
+                class="text-base font-poppins text-lg nav-link"
+                >Partners</a
+              >
+              <a href="#contact" class="text-base font-poppins text-lg nav-link"
+                >Contact Us</a
+              >
+            </div>
+          </div>
+
+          <!-- Desktop menu -->
+          <ul class="hidden lg:flex space-x-12">
+            <li>
+              <a
+                href="#home"
+                class="relative group text-base font-poppins sm:text-sm md:text-lg lg:text-l font-bold"
+              >
+                Home
+                <span
+                  class="absolute left-0 -bottom-2 h-[4px] w-0 bg-[#07ad8e] transition-all duration-300 group-hover:w-full"
+                ></span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#about"
+                class="relative group text-base font-poppins sm:text-sm md:text-lg lg:text-l font-bold"
+              >
+                About Us
+                <span
+                  class="absolute left-0 -bottom-2 h-[4px] w-0 bg-[#07ad8e] transition-all duration-300 group-hover:w-full"
+                ></span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#seller"
+                class="relative group text-base font-poppins sm:text-sm md:text-lg lg:text-l font-bold"
+              >
+                Sell With Us
+                <span
+                  class="absolute left-0 -bottom-2 h-[4px] w-0 bg-[#07ad8e] transition-all duration-300 group-hover:w-full"
+                ></span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#events"
+                class="relative group text-base font-poppins sm:text-sm md:text-lg lg:text-l font-bold"
+              >
+                Events
+                <span
+                  class="absolute left-0 -bottom-2 h-[4px] w-0 bg-[#07ad8e] transition-all duration-300 group-hover:w-full"
+                ></span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#partners"
+                class="relative group text-base font-poppins sm:text-sm md:text-lg lg:text-l font-bold"
+              >
+                Partners
+                <span
+                  class="absolute left-0 -bottom-2 h-[4px] w-0 bg-[#07ad8e] transition-all duration-300 group-hover:w-full"
+                ></span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="#contact"
+                class="relative group text-base font-poppins sm:text-sm md:text-lg lg:text-l font-bold"
+              >
+                Contact Us
+                <span
+                  class="absolute left-0 -bottom-2 h-[4px] w-0 bg-[#07ad8e] transition-all duration-300 group-hover:w-full"
+                ></span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <!-- Welcome Text -->
+      <div
+        class="welcome-text-box text-center"
+        style="margin-top: 110px; color: #07ad8e"
+      >
+        <div class="p-10 rounded-lg inline-block">
+          <h2
+            class="text-5xl text-white font-bold color-pink-500"
+            style="color: #ffffff"
+          >
+            Experience the Joy of Gulabi Gala!
+          </h2>
+          <p
+            class="text-white xs:text-lg sm:text-lg md:text-2xl lg:text-3xl mt-4 font-bold color-#000000"
+            style="color: #fff"
+          >
+            01, 02, 03 April 2025
+          </p>
+          <p
+            class="text-white xs:text-lg sm:text-xl md:text-2xl lg:text-2xl mt-4"
+            style="color: #fff"
+          >
+            Step into a world of excitement, entertainment, and endless shopping
+            at our vibrant Flea Market event!
+          </p>
+        </div>
+      </div>
+      <div class="absolute bottom-0 left-0 right-0">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 260">
+          <path
+            fill="#FFFFFF"
+            fill-opacity="1"
+            d="M0,256L60,234.7C120,213,240,171,360,181.3C480,192,600,256,720,256C840,256,960,192,1080,165.3C1200,139,1320,149,1380,154.7L1440,160L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"
+          ></path>
+        </svg>
+      </div>
+    </header>
+
+    <!-- Countdown Timer -->
+    <div
+      class="display-flex bg-white shadow-md text-center items-center justify-center countdown-container"
+    >
+      <div id="countdown" class="text-2xl sm:text-xl font-semibold">
+        <h3 class="animated-headline">
+          <!-- <span class="headline-plain-text">Entry</span> -->
+          <span class="headline-dynamic-wrapper">
+            <span class="headline-dynamic-text font-poppins">Hurry Up!</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 500 150"
+              preserveAspectRatio="none"
+              class="headline-underline"
+            >
+              <path
+                d="M9.3,127.3c49.3-3,150.7-7.6,199.7-7.4c121.9,0.4,189.9,0.4,282.3,7.2C380.1,129.6,181.2,130.6,70,139 
+                    c82.6-2.9,254.2-1,335.9,1.3c-56,1.4-137.2-0.3-197.1,9"
+              ></path>
+            </svg>
+          </span>
+          <!-- <span class="headline-plain-text">in</span> -->
+        </h3>
+
+        <div class="flex flex-row justify-between" style="margin-top: 60px">
+          <div class="flex flex-col items-center countdown">
+            <span id="days" class="text-4xl font-bold">00</span>
+            <span class="text-lg">Days</span>
+          </div>
+          <div class="flex flex-col items-center countdown">
+            <span id="hours" class="text-4xl font-bold">00</span>
+            <span class="text-lg">Hours</span>
+          </div>
+          <div class="flex flex-col items-center countdown">
+            <span id="minutes" class="text-4xl font-bold">00</span>
+            <span class="text-lg">Minutes</span>
+          </div>
+          <div class="flex flex-col items-center countdown">
+            <span id="seconds" class="text-4xl font-bold">00</span>
+            <span class="text-lg">Seconds</span>
+          </div>
+        </div>
+
+        <div class="flex flex-row justify-between">
+          <button>Become a Partner</button>
+          <button>Sell With Us</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Where & When Section -->
+    <section id="where-when">
+      <div class="container mx-auto px-4 text-center justify-between">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-8">
+          <!-- Where is the Event -->
+          <div
+            class="flex flex-row items-center shadow-lg rounded-lg grid-card"
+          >
+            <span class="material-icons text-6xl">place</span>
+            <div class="flex flex-col">
+              <h4 class="text-2xl font-bold mb-2 uppercase">
+                Where is the Event :
+              </h4>
+              <p class="text-gray-600">Kolayi, Malappuram</p>
+            </div>
+          </div>
+          <!-- When is the Event -->
+          <div
+            class="flex flex-row items-center shadow-lg rounded-lg grid-card"
+          >
+            <span class="material-icons text-6xl">event</span>
+            <div class="flex flex-col">
+              <h4 class="text-2xl font-bold mb-2 uppercase">
+                When is the Event :
+              </h4>
+              <p class="text-gray-600">01, 02, 03 April 2025</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Days Counter Section -->
+    <section id="highlights-counter">
+      <div
+        class="container mx-auto text-center flex flex-col justify-between w-full"
+      >
+        <h3 class="text-3xl font-bold mb-8">EVENT HIGHLIGHTS</h3>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-8">
+          <!-- Counter 1 -->
+          <div>
+            <p class="text-5xl font-bold counter-number" id="counterDays">0</p>
+            <p class="text-lg text-gray-500 mt-2">DAYS</p>
+          </div>
+          <!-- Counter 2 -->
+          <div>
+            <p class="text-5xl font-bold counter-number" id="counterStalls">
+              0
+            </p>
+            <p class="text-lg text-gray-500 mt-2">STALLS</p>
+          </div>
+          <!-- Counter 3 -->
+          <div>
+            <p
+              class="text-5xl font-bold counter-number"
+              id="counterEntertainment"
+            >
+              0
+            </p>
+            <p class="text-lg text-gray-500 mt-2">FOOD COURT</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Events Section -->
+    <section
+      id="events"
+      class="relative py-16 text-white"
+      style="
+        background-image: url('./assets/images/11557.jpg');
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+      "
+    >
+      <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+      <div class="relative container mx-auto px-4 event-container">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 p-5">
+          <!-- Event Cards -->
+          <div
+            class="rounded-lg shadow-lg relative h-80 overflow-hidden event-highlights-cards group"
+          >
+            <div
+              class="absolute inset-0 bg-cover bg-center card-image transform transition-transform duration-500 ease-in-out group-hover:scale-110"
+              style="background-image: url('./assets/images/popup-stalls.png')"
+            ></div>
+            <div
+              class="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center text-center p-6"
+            >
+              <span class="material-icons text-pink-500 text-6xl"
+                >storefront</span
+              >
+              <h4 class="text-2xl font-bold mt-4">Shopping Paradise</h4>
+              <p class="text-gray-200 mt-2">
+                Discover unique treasures and irresistible deals across a wide
+                range of stalls. From trendy fashion and handmade crafts to
+                quirky home decor and artisanal products, our market is a haven
+                for shoppers.
+              </p>
+            </div>
+          </div>
+          <div
+            class="rounded-lg shadow-lg relative h-80 overflow-hidden event-highlights-cards group"
+          >
+            <div
+              class="absolute inset-0 bg-cover bg-center card-image transform transition-transform duration-500 ease-in-out group-hover:scale-110"
+              style="background-image: url('./assets/images/food-court.jpg')"
+            ></div>
+            <div
+              class="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center text-center p-6"
+            >
+              <span class="material-icons text-pink-500 text-6xl"
+                >restaurant_menu</span
+              >
+              <h4 class="text-2xl font-bold mt-4">Food Court Delights</h4>
+              <p class="text-gray-200 mt-2">
+                Satisfy your taste buds with a variety of mouthwatering cuisines
+                at our food court. From street food favorites to gourmet treats,
+                there’s a dish for every palate
+              </p>
+            </div>
+          </div>
+          <div
+            class="rounded-lg shadow-lg relative h-80 overflow-hidden event-highlights-cards group"
+          >
+            <div
+              class="absolute inset-0 bg-cover bg-center card-image transform transition-transform duration-500 ease-in-out group-hover:scale-110"
+              style="background-image: url('./assets/images/music-show.jpeg')"
+            ></div>
+            <div
+              class="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center text-center p-6"
+            >
+              <span class="material-icons text-pink-500 text-6xl"
+                >music_note</span
+              >
+              <h4 class="text-2xl font-bold mt-4">Music Concert</h4>
+              <p class="text-gray-200 mt-2">
+                Enjoy a lineup of talented artists performing live music and
+                stage shows that will keep you entertained throughout the day.
+                Let the rhythm of the beats and captivating performances elevate
+                your spirits.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SELL WITH US -->
+    <section class="sell-with-us" id="sell-with-us">
+      <div
+        style="
+          display: flex;
+          flex-wrap: wrap;
+          align-items: center;
+          justify-content: space-between;
+          gap: 5rem;
+        "
+      >
+        <div style="flex: 1; min-width: 300px">
+          <div style="margin-bottom: 1rem">
+            <h2 style="font-weight: bold" class="uppercase">become a vendor</h2>
+            <div class="sub-heading-underline"></div>
+          </div>
+          <p style="font-size: 1rem; line-height: 1.6; color: #555">
+            In <b>GULABI GALA</b> we are giving an opportunity for home business
+            men and women to showcase their products. Whether you are making
+            clothes, baked goods, or other handmade items, this is the perfect
+            platform to share your creativity and connect with a wider audience.
+          </p>
+        </div>
+        <div style="flex: 1; min-width: 300px">
+          <p style="font-size: 1rem; line-height: 1.6; color: #555">
+            Join us to bring your passion to life and make your brand shine at
+            our vibrant flea market event.
+          </p>
+          <button>SELL WITH US</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- OUR INSTAGRAM FEED / GALLERY -->
+    <section
+      class="gallery clearfix"
+      id="gallery"
+      data-aos="fade-in"
+      data-aos-duration="4000"
+    >
+      <div class="heading">
+        <div style="display: flex; align-items: center">
+          <h3 style="margin: 0">Our Instagram Feed</h3>
+          <a
+            href="#"
+            style="
+              margin-left: auto;
+              text-decoration: none;
+              color: #5f5f5f;
+              font-weight: bold;
+              display: flex;
+              align-items: center;
+            "
+          >
+            See More
+            <span
+              class="material-icons"
+              style="font-size: 1.2rem; margin-left: 4px"
+              >arrow_forward</span
+            >
+          </a>
+        </div>
+        <div class="sub-heading-underline"></div>
+      </div>
+      <ul class="gallery-showcase">
+        <li>
+          <figure class="gallery-img">
+            <img src="./assets/images/gallery/6.jpg" alt="gallery-image" />
+          </figure>
+        </li>
+        <li>
+          <figure class="gallery-img">
+            <img src="./assets/images/gallery/2.jpg" alt="gallery-image" />
+          </figure>
+        </li>
+        <li>
+          <figure class="gallery-img">
+            <img src="./assets/images/gallery/3.jpg" alt="gallery-image" />
+          </figure>
+        </li>
+        <li>
+          <figure class="gallery-img">
+            <img src="./assets/images/gallery/4.jpg" alt="gallery-image" />
+          </figure>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact-us" style="background-color: #ffffff">
+      <div
+        style="
+          max-width: 1200px;
+          margin: auto;
+          display: flex;
+          flex-wrap: wrap;
+          gap: 2rem;
+        "
+      >
+        <!-- Contact Information -->
+        <div style="flex: 1; min-width: 300px" class="contact">
+          <h2 class="uppercase">Get In Touch</h2>
+          <div class="sub-heading-underline"></div>
+          <p
+            style="
+              font-size: 1rem;
+              line-height: 1.6;
+              color: #555;
+              margin-bottom: 1.5rem;
+              margin-top: 1rem;
+            "
+          >
+            We would love to hear from you! Feel free to reach out to us for any
+            inquiries, feedback, or collaboration opportunities.
+          </p>
+          <ul style="list-style: none; padding: 0; color: #555">
+            <li style="margin-bottom: 1rem; display: flex; align-items: center">
+              <span
+                class="material-icons"
+                style="color: #07ad8e; margin-right: 8px"
+                >location_on</span
+              >
+              Manjeri Road, Anakkayam, Malappuram
+            </li>
+            <li style="margin-bottom: 1rem; display: flex; align-items: center">
+              <span
+                class="material-icons"
+                style="color: #07ad8e; margin-right: 8px"
+                >phone</span
+              >
+              <span
+                >+91 884 890 5703 | +91 813 803 4762 | +91 999 554 9676</span
+              >
+            </li>
+            <li style="margin-bottom: 1rem; display: flex; align-items: center">
+              <span
+                class="material-icons"
+                style="color: #07ad8e; margin-right: 8px"
+                >phone</span
+              >
+              <span>+91 974 679 1421 | +91 907 204 8701</span>
+            </li>
+            <li style="margin-bottom: 1rem; display: flex; align-items: center">
+              <span
+                class="material-icons"
+                style="color: #07ad8e; margin-right: 8px"
+                >email</span
+              >
+              contact@fleamarket.com
+            </li>
+          </ul>
+        </div>
+
+        <!-- Contact Form -->
+        <div
+          class="form"
+          style="
+            flex: 1;
+            min-width: 300px;
+            background-color: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+          "
+        >
+          <form>
+            <div style="margin-bottom: 1rem">
+              <label
+                for="name"
+                style="display: block; font-size: 0.9rem; margin-bottom: 0.5rem"
+                >Your Name</label
+              >
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Enter your name"
+                style="
+                  width: 100%;
+                  padding: 0.75rem;
+                  border: 1px solid #ccc;
+                  border-radius: 4px;
+                  font-size: 1rem;
+                "
+              />
+            </div>
+            <div style="margin-bottom: 1rem">
+              <label
+                for="email"
+                style="display: block; font-size: 0.9rem; margin-bottom: 0.5rem"
+                >Your Email</label
+              >
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter your email"
+                style="
+                  width: 100%;
+                  padding: 0.75rem;
+                  border: 1px solid #ccc;
+                  border-radius: 4px;
+                  font-size: 1rem;
+                "
+              />
+            </div>
+            <div style="margin-bottom: 1rem">
+              <label
+                for="message"
+                style="display: block; font-size: 0.9rem; margin-bottom: 0.5rem"
+                >Your Message</label
+              >
+              <textarea
+                id="message"
+                name="message"
+                placeholder="Enter your message"
+                rows="5"
+                style="
+                  width: 100%;
+                  padding: 0.75rem;
+                  border: 1px solid #ccc;
+                  border-radius: 4px;
+                  font-size: 1rem;
+                "
+              ></textarea>
+            </div>
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-white" id="footer">
+      <div class="container mx-auto px-4">
+        <div class="flex flex-wrap justify-between items-start top-container">
+          <!-- Logo and About -->
+          <div class="w-full sm:w-1/3 mb-6 sm:mb-0">
+            <div class="flex items-center mb-4">
+              <img src="./assets/images/logo.png" />
+            </div>
+            <!-- <p class="text-sm text-gray-200">
+              Celebrating creativity, culture, and community. Join us to explore
+              unique crafts, delectable treats, and endless memories.
+            </p> -->
+          </div>
+
+          <!-- Quick Links -->
+          <div class="w-full sm:w-1/3 mb-6 sm:mb-0">
+            <h4 class="text-lg font-bold mb-4">Quick Links</h4>
+            <ul class="text-sm text-gray-200 space-y-2">
+              <li><a href="#about" class="hover:underline">About Us</a></li>
+              <li><a href="#events" class="hover:underline">Events</a></li>
+              <li>
+                <a href="#sell-with-us" class="hover:underline">Sell With Us</a>
+              </li>
+              <li>
+                <a href="#contact-us" class="hover:underline">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Social Media -->
+          <div class="w-full sm:w-1/3">
+            <h4 class="text-lg font-bold mb-4">Follow Us</h4>
+            <div class="flex space-x-4">
+              <a
+                href="https://www.facebook.com/people/Gulabi-Gala/61571951280571/"
+                class="hover:text-gray-300"
+              >
+                <span class="material-icons text-2xl">facebook</span>
+              </a>
+              <a
+                href="https://www.instagram.com/gulabi.gala/"
+                class="hover:text-gray-300"
+              >
+                <i class="fab fa-instagram text-2xl"></i>
+              </a>
+            </div>
+            <p class="text-md text-gray-200 mt-4">
+              Stay connected for the latest updates and highlights.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="mt-8 pt-4 pb-4 text-center" style="background-color: #000">
+        <p class="text-md">&copy; 2025 Gulabi Gala. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+      // Toggle side menu visibility
+      const menuToggle = document.getElementById("menu-toggle");
+      const sideMenu = document.getElementById("side-menu");
+      const closeMenu = document.getElementById("close-menu");
+      const navLinks = document.querySelectorAll('.nav-link'); 
+
+      // Open the side menu when the menu button is clicked
+      menuToggle.addEventListener("click", () => {
+        sideMenu.classList.remove("hidden");
+      });
+
+      // Close the side menu when the close button is clicked
+      closeMenu.addEventListener("click", () => {
+        sideMenu.classList.add("hidden");
+      });
+
+      // Close the side menu when a link is clicked
+      navLinks.forEach((link) => {
+        link.addEventListener("click", () => {
+          sideMenu.classList.add("hidden"); // Hide the side menu after a link is clicked
+        });
+      });
+    </script>
+
+    <script>
+      // Countdown function
+      function countdown() {
+        const eventDate = new Date("2025-04-01T00:00:00");
+        const now = new Date();
+        const remainingTime = eventDate - now;
+
+        if (remainingTime <= 0) {
+          document.getElementById("countdown").innerHTML = "Event Started!";
+          return;
+        }
+
+        const days = Math.floor(remainingTime / (1000 * 60 * 60 * 24));
+        const hours = Math.floor(
+          (remainingTime % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+        );
+        const minutes = Math.floor(
+          (remainingTime % (1000 * 60 * 60)) / (1000 * 60)
+        );
+        const seconds = Math.floor((remainingTime % (1000 * 60)) / 1000);
+
+        document.getElementById("days").innerHTML = days
+          .toString()
+          .padStart(2, "0");
+        document.getElementById("hours").innerHTML = hours
+          .toString()
+          .padStart(2, "0");
+        document.getElementById("minutes").innerHTML = minutes
+          .toString()
+          .padStart(2, "0");
+        document.getElementById("seconds").innerHTML = seconds
+          .toString()
+          .padStart(2, "0");
+      }
+
+      // Update the countdown every second
+      setInterval(countdown, 1000);
+    </script>
+
+    <script>
+      // Function to animate numbers
+      function animateCounter(id, target, appendSymbol = false) {
+        let count = 0;
+        const speed = 50; // Adjust speed for slower or faster animation
+        const increment = Math.ceil(target / 100); // Increment for smooth animation
+
+        const updateCounter = () => {
+          count += increment;
+          if (count >= target) {
+            count = target;
+            if (appendSymbol) {
+              document.getElementById(id).textContent = `${count}+`;
+            } else {
+              document.getElementById(id).textContent = count;
+            }
+          } else {
+            document.getElementById(id).textContent = count;
+            requestAnimationFrame(updateCounter);
+          }
+        };
+
+        updateCounter();
+      }
+
+      // Start counters on DOM load
+      document.addEventListener("DOMContentLoaded", () => {
+        animateCounter("counterDays", 3); // No + symbol for Days
+        animateCounter("counterStalls", 120, true); // Add + symbol for Stalls
+        animateCounter("counterEntertainment", 10, true); // Add + symbol for Entertainments
+      });
+    </script>
+  </body>
+</html>
