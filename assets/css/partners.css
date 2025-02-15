@@ -1,5 +1,5 @@
 .partners {
-  padding: 120px 250px 120px 250px;
+  padding: clamp(60px, 10vw, 120px) clamp(20px, 10vw, 250px);
 }
 
 .partners h1 {
@@ -21,8 +21,17 @@
 
 .partners .title-sponsors .partners-images,
 .partners .social-media-partners .partners-images {
-  gap: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 80px;
   margin-top: 40px;
+}
+
+.partners .title-sponsors img,
+.partners .social-media-partners img {
+  display: block;
+  /* margin: auto; */
 }
 
 .partners .title-sponsors .sponsor1 {
@@ -44,11 +53,10 @@
   width: 200px;
 }
 
-/* Media Max 1280px (Large Tablets, Small Laptops) */
+/* Large Tablets, Small Laptops (Max 1280px) */
 @media (max-width: 1280px) {
-  /* padding: 10px 40px; */
   .partners {
-    padding: 50px 40px;
+    padding: clamp(40px, 8vw, 80px) clamp(20px, 8vw, 100px);
   }
 
   .partners h1 {
@@ -57,47 +65,44 @@
 
   .partners .title-sponsors,
   .partners .social-media-partners {
-    margin-top: 20px;
+    margin-top: 30px;
     margin-bottom: 60px;
-  }
-
-  .partners .title-sponsors .partners-images,
-  .partners .social-media-partners .partners-images {
-    display: flex;
-    flex-direction: row;
-    gap: 40px;
   }
 
   .partners .title-sponsors h2,
   .partners .social-media-partners h2 {
-    font-size: 20px;
+    font-size: 22px;
+  }
+
+  .partners .title-sponsors .partners-images,
+  .partners .social-media-partners .partners-images {
+    gap: 60px;
   }
 
   .partners .title-sponsors .sponsor1 {
-    width: 400px;
+    width: 350px;
   }
   .partners .title-sponsors .sponsor2 {
-    width: 250px;
+    width: 220px;
   }
   .partners .social-media-partners .sponsor3 {
-    width: 200px;
+    width: 180px;
   }
   .partners .social-media-partners .sponsor4 {
-    width: 250px;
+    width: 220px;
   }
   .partners .social-media-partners .sponsor5 {
-    width: 250px;
+    width: 220px;
   }
   .partners .social-media-partners .sponsor6 {
-    width: 200px;
+    width: 180px;
   }
 }
 
-/* Media Max 900px (Tablets, Smaller Laptops) */
+/* Tablets, Smaller Laptops (Max 900px) */
 @media (max-width: 900px) {
-  /*  padding: 10px 30px; */
   .partners {
-    padding: 50px 30px;
+    padding: clamp(30px, 6vw, 60px) clamp(15px, 6vw, 60px);
   }
 
   .partners h1 {
@@ -107,24 +112,21 @@
   .partners .title-sponsors,
   .partners .social-media-partners {
     margin-top: 20px;
-    margin-bottom: 60px;
-  }
-
-  .partners .title-sponsors .partners-images,
-  .partners .social-media-partners .partners-images {
-    display: flex;
-    flex-direction: row;
-    gap: 40px;
+    margin-bottom: 50px;
   }
 
   .partners .title-sponsors h2,
   .partners .social-media-partners h2 {
-    color: #474747;
-    font-size: 18px;
+    font-size: 20px;
+  }
+
+  .partners .title-sponsors .partners-images,
+  .partners .social-media-partners .partners-images {
+    gap: 40px;
   }
 
   .partners .title-sponsors .sponsor1 {
-    width: 250px;
+    width: 280px;
   }
   .partners .title-sponsors .sponsor2 {
     width: 200px;
@@ -143,34 +145,32 @@
   }
 }
 
-/* Media Max 640 Pixels  */
+/* Mobile Devices (Max 640px) */
 @media (max-width: 640px) {
-  /* padding: 10px 10px 0px 30px; */
   .partners {
-    padding: 50px 10px;
+    padding: clamp(20px, 5vw, 50px) clamp(10px, 5vw, 30px);
   }
 
   .partners h1 {
-    color: #07ad8e;
     font-size: 20px;
   }
 
   .partners .title-sponsors,
   .partners .social-media-partners {
     margin-top: 20px;
-    margin-bottom: 60px;
-  }
-
-  .partners .title-sponsors .partners-images,
-  .partners .social-media-partners .partners-images {
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
+    margin-bottom: 40px;
   }
 
   .partners .title-sponsors h2,
   .partners .social-media-partners h2 {
     font-size: 18px;
+  }
+
+  .partners .title-sponsors .partners-images,
+  .partners .social-media-partners .partners-images {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
   }
 
   .partners .title-sponsors .sponsor1 {
