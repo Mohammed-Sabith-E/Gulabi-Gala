@@ -26,7 +26,7 @@ navLinks.forEach((link) => {
 
 // Countdown function
 function countdown() {
-    const eventDate = new Date("2025-04-01T00:00:00");
+    const eventDate = new Date("2025-04-25T00:00:00");
     const now = new Date();
     const remainingTime = eventDate - now;
 
